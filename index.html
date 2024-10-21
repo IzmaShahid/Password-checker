@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Create Your Password</h2>
+    <form id="passwordForm">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <small id="passwordHelp" class="error"></small>
+
+      <ul id="passwordCriteria">
+        <li id="length" class="invalid">At least 8 characters</li>
+        <li id="number" class="invalid">At least one number</li>
+        <li id="special" class="invalid">At least one special character (!@#$%^&*)</li>
+      </ul>
+
+      <button type="submit" id="submitBtn" disabled>Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
